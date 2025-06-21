@@ -136,7 +136,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{vehicle-model-service-host}}/api/v1/vehicles",
+							"raw": "{{vehicle-model-service-host}}/api/v1/vehicle-models",
 							"host": [
 								"{{vehicle-model-service-host}}"
 							],
@@ -155,7 +155,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{vehicle-model-service-host}}/api/v1/vehicles/{{vehicleId-get}}",
+							"raw": "{{vehicle-model-service-host}}/api/v1/vehicle-models/{{vehicleId-get}}",
 							"host": [
 								"{{vehicle-model-service-host}}"
 							],
@@ -184,7 +184,7 @@
 							"raw": "{\n    \"brand\": \"Chevrolet\",\n    \"model\": \"Trakcer\",\n    \"manufactureYear\": 2025,\n    \"type\": \"SUV\",\n    \"price\": 15000.00,\n    \"warrantyYears\": 3\n}"
 						},
 						"url": {
-							"raw": "{{vehicle-model-service-host}}/api/v1/vehicles",
+							"raw": "{{vehicle-model-service-host}}/api/v1/vehicle-models",
 							"host": [
 								"{{vehicle-model-service-host}}"
 							],
@@ -212,7 +212,7 @@
 							"raw": "{\n    \"brand\": \"Volkswagen\",\n    \"model\": \"Golf\",\n    \"manufactureYear\": 2020,\n    \"type\": \"Sport\",\n    \"price\": 10500.00,\n    \"warrantyYears\": 3\n}"
 						},
 						"url": {
-							"raw": "{{vehicle-model-service-host}}/api/v1/vehicles/{{vehicleId-update}}",
+							"raw": "{{vehicle-model-service-host}}/api/v1/vehicle-models/{{vehicleId-update}}",
 							"host": [
 								"{{vehicle-model-service-host}}"
 							],
@@ -232,7 +232,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{vehicle-model-service-host}}/api/v1/vehicles/{{vehicleId-delete}}",
+							"raw": "{{vehicle-model-service-host}}/api/v1/vehicle-models/{{vehicleId-delete}}",
 							"host": [
 								"{{vehicle-model-service-host}}"
 							],

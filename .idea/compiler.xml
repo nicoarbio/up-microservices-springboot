@@ -8,8 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="sales-service" />
         <module name="maintenance-service" />
-        <module name="vehicle-service" />
         <module name="customer-service" />
+        <module name="vehicle-model-service" />
         <module name="branch-service" />
         <module name="eureka-server" />
         <module name="vehicle-unit-service" />
@@ -23,7 +23,7 @@
       <module name="eureka-server" options="-parameters" />
       <module name="maintenance-service" options="-parameters" />
       <module name="sales-service" options="-parameters" />
-      <module name="vehicle-service" options="-parameters" />
+      <module name="vehicle-model-service" options="-parameters" />
       <module name="vehicle-unit-service" options="-parameters" />
     </option>
   </component>

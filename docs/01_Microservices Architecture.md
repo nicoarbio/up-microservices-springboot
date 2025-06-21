@@ -49,8 +49,8 @@ All services will:
 
 ---
 
-### 🚗 `vehicle-service`
-- **Maven Artifact**: `vehicle-service`
+### 🚗 `vehicle-model-service`
+- **Maven Artifact**: `vehicle-model-service`
 - **Responsibility**: Manage `VehicleModel` (catalog of car types).
 - **Entities**: `VehicleModel`
 - **Port**: `8082`
@@ -71,7 +71,7 @@ All services will:
 - **Port**: `8083`
 - **Database**: H2 with `data.sql` on startup
 - **Dependencies**:
-  - Calls `vehicle-service` via Feign to get `VehicleModel` details
+  - Calls `vehicle-model-service` via Feign to get `VehicleModel` details
 - **Maven Dependencies**:
   - Spring Validation
   - Spring Data JPA
