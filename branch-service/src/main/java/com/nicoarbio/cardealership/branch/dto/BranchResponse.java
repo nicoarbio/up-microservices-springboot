@@ -1,4 +1,4 @@
-package com.nicoarbio.cardealership.branchservice.dto;
+package com.nicoarbio.cardealership.branch.dto;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

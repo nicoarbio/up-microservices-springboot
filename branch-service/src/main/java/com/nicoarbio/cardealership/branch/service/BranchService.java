@@ -1,10 +1,10 @@
-package com.nicoarbio.cardealership.branchservice.service;
+package com.nicoarbio.cardealership.branch.service;
 
-import com.nicoarbio.cardealership.branchservice.dto.BranchRequest;
-import com.nicoarbio.cardealership.branchservice.dto.BranchResponse;
-import com.nicoarbio.cardealership.branchservice.dto.mapper.BranchMapper;
-import com.nicoarbio.cardealership.branchservice.entity.Branch;
-import com.nicoarbio.cardealership.branchservice.repository.BranchRepository;
+import com.nicoarbio.cardealership.branch.dto.BranchRequest;
+import com.nicoarbio.cardealership.branch.dto.BranchResponse;
+import com.nicoarbio.cardealership.branch.dto.mapper.BranchMapper;
+import com.nicoarbio.cardealership.branch.entity.Branch;
+import com.nicoarbio.cardealership.branch.repository.BranchRepository;
 import com.nicoarbio.cardealership.exception.types.EntityAlreadyExistsException;
 import jakarta.transaction.Transactional;
 import org.springframework.dao.DataIntegrityViolationException;

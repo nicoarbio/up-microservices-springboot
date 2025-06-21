@@ -1,8 +1,8 @@
-package com.nicoarbio.cardealership.branchservice.controller;
+package com.nicoarbio.cardealership.branch.controller;
 
-import com.nicoarbio.cardealership.branchservice.dto.BranchRequest;
-import com.nicoarbio.cardealership.branchservice.dto.BranchResponse;
-import com.nicoarbio.cardealership.branchservice.service.BranchService;
+import com.nicoarbio.cardealership.branch.dto.BranchRequest;
+import com.nicoarbio.cardealership.branch.dto.BranchResponse;
+import com.nicoarbio.cardealership.branch.service.BranchService;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

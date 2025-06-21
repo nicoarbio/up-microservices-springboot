@@ -1,6 +1,6 @@
-package com.nicoarbio.cardealership.branchservice.repository;
+package com.nicoarbio.cardealership.branch.repository;
 
-import com.nicoarbio.cardealership.branchservice.entity.Branch;
+import com.nicoarbio.cardealership.branch.entity.Branch;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

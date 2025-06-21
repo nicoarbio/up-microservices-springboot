@@ -1,8 +1,8 @@
-package com.nicoarbio.cardealership.branchservice.dto.mapper;
+package com.nicoarbio.cardealership.branch.dto.mapper;
 
-import com.nicoarbio.cardealership.branchservice.dto.BranchRequest;
-import com.nicoarbio.cardealership.branchservice.dto.BranchResponse;
-import com.nicoarbio.cardealership.branchservice.entity.Branch;
+import com.nicoarbio.cardealership.branch.dto.BranchRequest;
+import com.nicoarbio.cardealership.branch.dto.BranchResponse;
+import com.nicoarbio.cardealership.branch.entity.Branch;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

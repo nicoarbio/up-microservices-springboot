@@ -1,4 +1,4 @@
-package com.nicoarbio.cardealership.branchservice.entity;
+package com.nicoarbio.cardealership.branch.entity;
 
 import jakarta.persistence.*;
 import org.springframework.data.annotation.CreatedDate;

@@ -1,4 +1,4 @@
-package com.nicoarbio.cardealership.branchservice.filter;
+package com.nicoarbio.cardealership.branch.filter;
 
 import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletRequest;
