@@ -1,10 +1,10 @@
-package com.nicoarbio.cardealership.vehicleunitsservice.controller;
+package com.nicoarbio.cardealership.vehicleunit.controller;
 
-import com.nicoarbio.cardealership.vehicleunitsservice.dto.VehicleUnitRequest;
-import com.nicoarbio.cardealership.vehicleunitsservice.dto.VehicleUnitFullResponse;
-import com.nicoarbio.cardealership.vehicleunitsservice.dto.VehicleUnitResponse;
-import com.nicoarbio.cardealership.vehicleunitsservice.dto.VehicleUnitSoldRequest;
-import com.nicoarbio.cardealership.vehicleunitsservice.service.VehicleUnitService;
+import com.nicoarbio.cardealership.vehicleunit.dto.VehicleUnitRequest;
+import com.nicoarbio.cardealership.vehicleunit.dto.VehicleUnitFullResponse;
+import com.nicoarbio.cardealership.vehicleunit.dto.VehicleUnitResponse;
+import com.nicoarbio.cardealership.vehicleunit.dto.VehicleUnitSoldRequest;
+import com.nicoarbio.cardealership.vehicleunit.service.VehicleUnitService;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

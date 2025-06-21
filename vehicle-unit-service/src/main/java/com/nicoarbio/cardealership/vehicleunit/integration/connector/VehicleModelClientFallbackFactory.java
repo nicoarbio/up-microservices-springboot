@@ -1,6 +1,6 @@
-package com.nicoarbio.cardealership.vehicleunitsservice.integration.connector;
+package com.nicoarbio.cardealership.vehicleunit.integration.connector;
 
-import com.nicoarbio.cardealership.vehicleunitsservice.integration.dto.VehicleModel;
+import com.nicoarbio.cardealership.vehicleunit.integration.dto.VehicleModel;
 import feign.FeignException;
 import org.springframework.cloud.openfeign.FallbackFactory;
 import org.springframework.stereotype.Component;

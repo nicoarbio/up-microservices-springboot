@@ -1,14 +1,14 @@
-package com.nicoarbio.cardealership.vehicleunitsservice.dto;
+package com.nicoarbio.cardealership.vehicleunit.dto;
 
-import com.nicoarbio.cardealership.vehicleunitsservice.entity.LocationType;
-import com.nicoarbio.cardealership.vehicleunitsservice.entity.VehicleUnitStatus;
+import com.nicoarbio.cardealership.vehicleunit.entity.LocationType;
+import com.nicoarbio.cardealership.vehicleunit.entity.VehicleUnitStatus;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
 /**
- * Includes information from {@link com.nicoarbio.cardealership.vehicleunitsservice.integration.dto.VehicleModel}
+ * Includes information from {@link com.nicoarbio.cardealership.vehicleunit.integration.dto.VehicleModel}
  */
 public record VehicleUnitFullResponse(
         UUID id,

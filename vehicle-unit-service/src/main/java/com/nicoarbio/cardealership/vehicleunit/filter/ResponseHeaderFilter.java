@@ -1,4 +1,4 @@
-package com.nicoarbio.cardealership.vehicleunitsservice.filter;
+package com.nicoarbio.cardealership.vehicleunit.filter;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

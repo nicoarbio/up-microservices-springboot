@@ -1,4 +1,4 @@
-package com.nicoarbio.cardealership.vehicleunitsservice.dto;
+package com.nicoarbio.cardealership.vehicleunit.dto;
 
 import jakarta.validation.constraints.NotNull;
 

@@ -1,7 +1,7 @@
-package com.nicoarbio.cardealership.vehicleunitsservice.dto;
+package com.nicoarbio.cardealership.vehicleunit.dto;
 
-import com.nicoarbio.cardealership.vehicleunitsservice.entity.LocationType;
-import com.nicoarbio.cardealership.vehicleunitsservice.entity.VehicleUnitStatus;
+import com.nicoarbio.cardealership.vehicleunit.entity.LocationType;
+import com.nicoarbio.cardealership.vehicleunit.entity.VehicleUnitStatus;
 
 import java.time.LocalDateTime;
 import java.util.UUID;

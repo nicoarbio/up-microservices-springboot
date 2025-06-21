@@ -1,4 +1,4 @@
-package com.nicoarbio.cardealership.vehicleunitsservice.integration.dto;
+package com.nicoarbio.cardealership.vehicleunit.integration.dto;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

@@ -1,10 +1,10 @@
-package com.nicoarbio.cardealership.vehicleunitsservice.dto.mapper;
+package com.nicoarbio.cardealership.vehicleunit.dto.mapper;
 
-import com.nicoarbio.cardealership.vehicleunitsservice.dto.VehicleUnitRequest;
-import com.nicoarbio.cardealership.vehicleunitsservice.dto.VehicleUnitFullResponse;
-import com.nicoarbio.cardealership.vehicleunitsservice.dto.VehicleUnitResponse;
-import com.nicoarbio.cardealership.vehicleunitsservice.entity.VehicleUnit;
-import com.nicoarbio.cardealership.vehicleunitsservice.integration.dto.VehicleModel;
+import com.nicoarbio.cardealership.vehicleunit.dto.VehicleUnitRequest;
+import com.nicoarbio.cardealership.vehicleunit.dto.VehicleUnitFullResponse;
+import com.nicoarbio.cardealership.vehicleunit.dto.VehicleUnitResponse;
+import com.nicoarbio.cardealership.vehicleunit.entity.VehicleUnit;
+import com.nicoarbio.cardealership.vehicleunit.integration.dto.VehicleModel;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

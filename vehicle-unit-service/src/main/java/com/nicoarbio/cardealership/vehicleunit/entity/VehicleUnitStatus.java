@@ -1,4 +1,4 @@
-package com.nicoarbio.cardealership.vehicleunitsservice.entity;
+package com.nicoarbio.cardealership.vehicleunit.entity;
 
 public enum VehicleUnitStatus {
     AVAILABLE,
