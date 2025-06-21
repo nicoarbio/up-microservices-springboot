@@ -1,4 +1,4 @@
-package com.nicoarbio.cardealership.maintenanceservice;
+package com.nicoarbio.cardealership.maintenance;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package com.nicoarbio.cardealership.maintenanceservice;
+package com.nicoarbio.cardealership.maintenance;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
