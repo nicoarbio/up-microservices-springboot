@@ -1,4 +1,4 @@
-package com.nicoarbio.cardealership.customerservice.exception;
+package com.nicoarbio.cardealership.customer.exception;
 
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 import com.nicoarbio.cardealership.exception.types.EntityAlreadyExistsException;

@@ -1,4 +1,4 @@
-package com.nicoarbio.cardealership.customerservice.dto;
+package com.nicoarbio.cardealership.customer.dto;
 
 import java.time.LocalDateTime;
 import java.util.UUID;

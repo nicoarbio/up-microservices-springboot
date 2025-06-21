@@ -1,4 +1,4 @@
-package com.nicoarbio.cardealership.customerservice;
+package com.nicoarbio.cardealership.customer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

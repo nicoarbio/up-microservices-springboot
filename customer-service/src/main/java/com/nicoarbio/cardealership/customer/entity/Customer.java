@@ -1,4 +1,4 @@
-package com.nicoarbio.cardealership.customerservice.entity;
+package com.nicoarbio.cardealership.customer.entity;
 
 import jakarta.persistence.*;
 import org.springframework.data.annotation.CreatedDate;

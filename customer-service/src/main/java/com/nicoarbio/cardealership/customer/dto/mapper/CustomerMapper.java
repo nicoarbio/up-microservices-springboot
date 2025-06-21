@@ -1,8 +1,8 @@
-package com.nicoarbio.cardealership.customerservice.dto.mapper;
+package com.nicoarbio.cardealership.customer.dto.mapper;
 
-import com.nicoarbio.cardealership.customerservice.dto.CustomerRequest;
-import com.nicoarbio.cardealership.customerservice.dto.CustomerResponse;
-import com.nicoarbio.cardealership.customerservice.entity.Customer;
+import com.nicoarbio.cardealership.customer.dto.CustomerRequest;
+import com.nicoarbio.cardealership.customer.dto.CustomerResponse;
+import com.nicoarbio.cardealership.customer.entity.Customer;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

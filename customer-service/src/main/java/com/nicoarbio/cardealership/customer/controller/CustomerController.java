@@ -1,8 +1,8 @@
-package com.nicoarbio.cardealership.customerservice.controller;
+package com.nicoarbio.cardealership.customer.controller;
 
-import com.nicoarbio.cardealership.customerservice.dto.CustomerRequest;
-import com.nicoarbio.cardealership.customerservice.dto.CustomerResponse;
-import com.nicoarbio.cardealership.customerservice.service.CustomerService;
+import com.nicoarbio.cardealership.customer.dto.CustomerRequest;
+import com.nicoarbio.cardealership.customer.dto.CustomerResponse;
+import com.nicoarbio.cardealership.customer.service.CustomerService;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
