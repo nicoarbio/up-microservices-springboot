@@ -1,4 +1,4 @@
-INSERT INTO vehicleModel (id, brand, model, manufacture_year, type, price, warranty_years, created_at, updated_at
+INSERT INTO vehicle_model (id, brand, model, manufacture_year, type, price, warranty_years, created_at, updated_at
 ) VALUES
       ('10bcdfb4-6254-443c-b34d-3d1c62363d7b', 'Ford', 'Fiesta', 2020, 'Hatchback', 7500.0, 5, '2025-06-17T10:00:00.000001', '2025-06-17T10:00:00.000001'),
       ('6930f515-013e-491b-932b-440da5d37f9f', 'Ford', 'Focus', 2021, 'Sedán', 9200.0, 5, '2025-06-17T10:00:00.000001', '2025-06-17T10:00:00.000001'),
