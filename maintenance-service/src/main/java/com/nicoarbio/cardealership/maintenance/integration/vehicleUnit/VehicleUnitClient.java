@@ -6,8 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
 
-@FeignClient("vehicle-unit-service")
-@RequestMapping("/api/v1/vehicle-units")
+@FeignClient(name = "vehicle-unit-service", path = "/api/v1/vehicle-units")
 public interface VehicleUnitClient {
 
     @GetMapping("/{id}")

@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.UUID;
 
-@FeignClient("vehicle-model-service")
+@FeignClient(name = "vehicle-model-service", path = "/api/v1/vehicle-models")
 public interface VehicleModelClient {
 
-    @GetMapping("/api/v1/vehicle-models/{id}")
+    @GetMapping("/{id}")
     VehicleModelResponse getVehicleModelById(@PathVariable UUID id);
 
 }
