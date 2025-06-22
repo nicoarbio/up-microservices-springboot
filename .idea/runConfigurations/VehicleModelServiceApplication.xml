@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="VehicleModelServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" folderName="Services" nameIsGenerated="true">
+    <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+    <module name="vehicle-model-service" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.nicoarbio.cardealership.vehiclemodel.VehicleModelServiceApplication" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
