@@ -1,6 +1,6 @@
 package com.nicoarbio.cardealership.vehicleunit.integration.connector;
 
-import com.nicoarbio.cardealership.vehicleunit.integration.dto.VehicleModel;
+import com.nicoarbio.cardealership.vehiclemodel.dto.VehicleModelResponse;
 import feign.FeignException;
 import org.springframework.cloud.openfeign.FallbackFactory;
 import org.springframework.stereotype.Component;
@@ -13,7 +13,7 @@ public class VehicleModelClientFallbackFactory implements FallbackFactory<Vehicl
     public VehicleModelClient create(Throwable cause) {
         return new VehicleModelClient() {
             @Override
-            public VehicleModel getVehicleModelById(String id) {
+            public VehicleModelResponse getVehicleModelById(String id) {
                 if (cause instanceof FeignException.NotFound) {
                     throw new NoSuchElementException("Vehicle Model not found for ID: " + id);
                 }

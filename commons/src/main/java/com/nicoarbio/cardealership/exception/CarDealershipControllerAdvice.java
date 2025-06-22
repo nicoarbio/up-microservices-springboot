@@ -90,7 +90,7 @@ public class CarDealershipControllerAdvice {
     /**
      * Handles specific already existing Entity exception
      */
-    @ExceptionHandler(EntityAlreadyExistsException.class)
+    @ExceptionHandler({ EntityAlreadyExistsException.class, IllegalStateException.class })
     public ResponseEntity<Map<String, Object>> handleEntityAlreadyExistsException(RuntimeException ex) {
         return ResponseEntity.status(HttpStatus.CONFLICT).body(createErrorResponse(
                 HttpStatus.CONFLICT,

@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: vehicle-service
+    name: vehicle-model-service
 
 # Database configuration
   jpa:

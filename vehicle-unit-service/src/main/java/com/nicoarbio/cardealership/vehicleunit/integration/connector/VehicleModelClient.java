@@ -1,6 +1,6 @@
 package com.nicoarbio.cardealership.vehicleunit.integration.connector;
 
-import com.nicoarbio.cardealership.vehicleunit.integration.dto.VehicleModel;
+import com.nicoarbio.cardealership.vehiclemodel.dto.VehicleModelResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface VehicleModelClient {
 
     @GetMapping("/api/v1/vehicle-models/{id}")
-    VehicleModel getVehicleModelById(@PathVariable String id);
+    VehicleModelResponse getVehicleModelById(@PathVariable String id);
 
 }

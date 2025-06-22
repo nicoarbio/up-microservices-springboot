@@ -1,4 +1,4 @@
-package com.nicoarbio.cardealership.vehicleunit.entity;
+package com.nicoarbio.cardealership.vehicleunit.dto;
 
 public enum LocationType {
     CENTRAL,

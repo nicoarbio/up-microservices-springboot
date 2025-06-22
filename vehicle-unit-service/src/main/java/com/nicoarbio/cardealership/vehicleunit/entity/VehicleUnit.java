@@ -1,5 +1,7 @@
 package com.nicoarbio.cardealership.vehicleunit.entity;
 
+import com.nicoarbio.cardealership.vehicleunit.dto.LocationType;
+import com.nicoarbio.cardealership.vehicleunit.dto.VehicleUnitStatus;
 import jakarta.persistence.*;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;

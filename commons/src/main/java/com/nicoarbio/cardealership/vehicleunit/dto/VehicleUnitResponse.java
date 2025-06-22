@@ -1,8 +1,5 @@
 package com.nicoarbio.cardealership.vehicleunit.dto;
 
-import com.nicoarbio.cardealership.vehicleunit.entity.LocationType;
-import com.nicoarbio.cardealership.vehicleunit.entity.VehicleUnitStatus;
-
 import java.time.LocalDateTime;
 import java.util.UUID;
 

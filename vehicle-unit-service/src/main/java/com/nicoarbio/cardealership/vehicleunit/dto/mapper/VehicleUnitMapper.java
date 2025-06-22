@@ -1,10 +1,10 @@
 package com.nicoarbio.cardealership.vehicleunit.dto.mapper;
 
+import com.nicoarbio.cardealership.vehiclemodel.dto.VehicleModelResponse;
 import com.nicoarbio.cardealership.vehicleunit.dto.VehicleUnitRequest;
 import com.nicoarbio.cardealership.vehicleunit.dto.VehicleUnitFullResponse;
 import com.nicoarbio.cardealership.vehicleunit.dto.VehicleUnitResponse;
 import com.nicoarbio.cardealership.vehicleunit.entity.VehicleUnit;
-import com.nicoarbio.cardealership.vehicleunit.integration.dto.VehicleModel;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -48,7 +48,7 @@ public class VehicleUnitMapper {
         return vehicles.stream().map(this::toResponse).collect(Collectors.toList());
     }
 
-    public VehicleUnitFullResponse toFullResponse(VehicleUnit vehicleStock, VehicleModel vehicleModel) {
+    public VehicleUnitFullResponse toFullResponse(VehicleUnit vehicleStock, VehicleModelResponse vehicleModel) {
         return new VehicleUnitFullResponse(
                 vehicleStock.getId(),
                 vehicleStock.getLicencePlate(),
