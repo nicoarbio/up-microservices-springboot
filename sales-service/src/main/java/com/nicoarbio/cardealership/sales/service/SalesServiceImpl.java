@@ -3,11 +3,11 @@ package com.nicoarbio.cardealership.sales.service;
 import com.nicoarbio.cardealership.branch.dto.BranchResponse;
 import com.nicoarbio.cardealership.customer.dto.CustomerResponse;
 import com.nicoarbio.cardealership.employee.dto.EmployeeResponse;
+import com.nicoarbio.cardealership.exception.types.VehicleUnitNotAvailableException;
 import com.nicoarbio.cardealership.sales.dto.SaleSpecificVehicleUnitRequest;
 import com.nicoarbio.cardealership.sales.dto.SalesMapper;
 import com.nicoarbio.cardealership.sales.dto.SalesResponse;
 import com.nicoarbio.cardealership.sales.entity.Sale;
-import com.nicoarbio.cardealership.sales.exception.types.VehicleUnitNotAvailableException;
 import com.nicoarbio.cardealership.sales.integration.branch.BranchClient;
 import com.nicoarbio.cardealership.sales.integration.customer.CustomerClient;
 import com.nicoarbio.cardealership.sales.integration.employee.EmployeeClient;
@@ -63,17 +63,17 @@ public class SalesServiceImpl implements SalesService {
 
     @Transactional
     public SalesResponse registerSellOfSpecificVehicleUnit(SaleSpecificVehicleUnitRequest request) {
-        EmployeeResponse employee = employeeClient.getEmployeeById(request.employeeId());
+        final EmployeeResponse employee = employeeClient.getEmployeeById(request.employeeId());
         if (!employee.isActive()) {
             throw new IllegalStateException("Employee " + employee.id() + " is not active. Cannot register sale.");
         }
 
-        BranchResponse branch = branchClient.getBranchById(request.branchId());
+        final BranchResponse branch = branchClient.getBranchById(request.branchId());
         if (!employee.branchId().equals(branch.id())) {
             throw new IllegalStateException("Employee " + employee.id() + " must be in the same branch as the sale. Cannot register sale from branch ID " + branch.id());
         }
 
-        VehicleUnitFullResponse vehicleUnit = vehicleUnitClient.getVehicleUnitById(request.vehicleUnitId());
+        final VehicleUnitFullResponse vehicleUnit = vehicleUnitClient.getVehicleUnitById(request.vehicleUnitId());
 
         if (vehicleUnit.status().equals(VehicleUnitStatus.SOLD)) {
             throw new VehicleUnitNotAvailableException("Vehicle Unit " + vehicleUnit.id() + " is already SOLD. Cannot be sold again.");
@@ -85,14 +85,14 @@ public class SalesServiceImpl implements SalesService {
             throw new VehicleUnitNotAvailableException("Vehicle Unit " + vehicleUnit.id() + " must be in CENTRAL or current BRANCH. Cannot be sold from branch ID " + branch.id());
         }
 
-        CustomerResponse customer = customerClient.getCustomerById(request.customerId());
+        customerClient.getCustomerById(request.customerId());
 
         Sale sale = new Sale();
         sale.setAmount(vehicleUnit.price());
         sale.setSaleDate(LocalDate.now());
         sale.setDeliveryDate(LocalDate.now().plusDays(resolveDeliveryDays(vehicleUnit, branch)));
         sale.setEmployeeId(employee.id());
-        sale.setCustomerId(customer.id());
+        sale.setCustomerId(request.customerId());
         sale.setVehicleUnitId(vehicleUnit.id());
         sale.setBranchId(branch.id());
 
@@ -120,6 +120,12 @@ public class SalesServiceImpl implements SalesService {
             return deliveryDays;
 
         }
+    }
+
+    public SalesResponse getByVehicleUnitId(UUID id) {
+        return repository.findByVehicleUnitId(id)
+            .map(mapper::toResponse)
+            .orElseThrow(() -> new NoSuchElementException("Sale for Vehicle Unit " + id + " not found"));
     }
 
 }

@@ -1,4 +1,4 @@
-package com.nicoarbio.cardealership.sales.integration.branch;
+package com.nicoarbio.cardealership.maintenance.integration.branch;
 
 import com.nicoarbio.cardealership.branch.dto.BranchResponse;
 import org.springframework.cloud.openfeign.FeignClient;

@@ -2,6 +2,7 @@ package com.nicoarbio.cardealership.exception;
 
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 import com.nicoarbio.cardealership.exception.types.EntityAlreadyExistsException;
+import com.nicoarbio.cardealership.exception.types.VehicleUnitNotAvailableException;
 import feign.FeignException;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
@@ -90,7 +91,11 @@ public class CarDealershipControllerAdvice {
     /**
      * Handles specific already existing Entity exception
      */
-    @ExceptionHandler({ EntityAlreadyExistsException.class, IllegalStateException.class })
+    @ExceptionHandler({
+            EntityAlreadyExistsException.class,
+            IllegalStateException.class,
+            VehicleUnitNotAvailableException.class
+    })
     public ResponseEntity<Map<String, Object>> handleEntityAlreadyExistsException(RuntimeException ex) {
         return ResponseEntity.status(HttpStatus.CONFLICT).body(createErrorResponse(
                 HttpStatus.CONFLICT,

@@ -30,6 +30,11 @@ public class SalesController {
         return ResponseEntity.ok(service.getById(id));
     }
 
+    @GetMapping("/vehicle-unit/{vehicleUnitId}")
+    public ResponseEntity<SalesResponse> getByVehicleUnitId(@PathVariable UUID vehicleUnitId) {
+        return ResponseEntity.ok(service.getByVehicleUnitId(vehicleUnitId));
+    }
+
     @PostMapping
     public ResponseEntity<SalesResponse> registerSellOfSpecificVehicleUnit(@Valid @RequestBody SaleSpecificVehicleUnitRequest specificVehicleUnitRequest) {
         return ResponseEntity.ok(service.registerSellOfSpecificVehicleUnit(specificVehicleUnitRequest));

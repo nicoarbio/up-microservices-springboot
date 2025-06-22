@@ -86,11 +86,12 @@ This document defines the core entities and their relationships for the car deal
 **Attributes:**
 - `id`: UUID
 - `entryDate`: LocalDate
-- `mileage`: Integer
+- `kilometrage`: Integer
 - `isUnderWarranty`: Boolean
 - `serviceType`: String (e.g. oil change, general inspection)
 - `vehicleUnit`: VehicleUnit (FK)
 - `customer`: Customer (FK)
+- `employee`: Employee (FK)
 
 ---
 

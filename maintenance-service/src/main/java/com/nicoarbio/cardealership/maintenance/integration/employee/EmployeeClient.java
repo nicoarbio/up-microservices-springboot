@@ -1,4 +1,4 @@
-package com.nicoarbio.cardealership.sales.integration.employee;
+package com.nicoarbio.cardealership.maintenance.integration.employee;
 
 import com.nicoarbio.cardealership.employee.dto.EmployeeResponse;
 import org.springframework.cloud.openfeign.FeignClient;

@@ -1,7 +1,6 @@
-package com.nicoarbio.cardealership.sales.integration.vehicleUnit;
+package com.nicoarbio.cardealership.maintenance.integration.vehicleUnit;
 
 import com.nicoarbio.cardealership.vehicleunit.dto.VehicleUnitFullResponse;
-import com.nicoarbio.cardealership.vehicleunit.dto.VehicleUnitSoldRequest;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,7 +13,5 @@ public interface VehicleUnitClient {
     @GetMapping("/{id}")
     VehicleUnitFullResponse getVehicleUnitById(@PathVariable UUID id);
 
-    @PatchMapping("/{id}/sold")
-    VehicleUnitFullResponse updateVehicleUnitSold(@PathVariable UUID id, @RequestBody VehicleUnitSoldRequest vehicleUnitSoldBranchRequest);
 
 }

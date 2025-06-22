@@ -41,14 +41,14 @@ public class VehicleUnitServiceImpl implements VehicleUnitService {
     public VehicleUnitFullResponse getById(UUID id) {
         VehicleUnit vehicleUnit = repository.findById(id)
                 .orElseThrow(() -> new NoSuchElementException("Vehicle " + id + " not found"));
-        VehicleModelResponse vehicleModel = vehicleModelClient.getVehicleModelById(vehicleUnit.getVehicleModelId().toString());
+        final VehicleModelResponse vehicleModel = vehicleModelClient.getVehicleModelById(vehicleUnit.getVehicleModelId());
 
         return this.mapper.toFullResponse(vehicleUnit, vehicleModel);
     }
 
     @Transactional
     public VehicleUnitFullResponse create(VehicleUnitRequest request) {
-        VehicleModelResponse vehicleModel = vehicleModelClient.getVehicleModelById(request.vehicleModelId().toString());
+        final VehicleModelResponse vehicleModel = vehicleModelClient.getVehicleModelById(request.vehicleModelId());
         VehicleUnit entity = mapper.toEntity(request);
         try {
             repository.saveAndFlush(entity);
@@ -63,7 +63,7 @@ public class VehicleUnitServiceImpl implements VehicleUnitService {
         final VehicleUnit existing = repository.findById(id)
                 .orElseThrow(() -> new NoSuchElementException("Vehicle " + id + " not found"));
         mapper.toEntity(request, existing);
-        VehicleModelResponse vehicleModel = vehicleModelClient.getVehicleModelById(request.vehicleModelId().toString());
+        final VehicleModelResponse vehicleModel = vehicleModelClient.getVehicleModelById(request.vehicleModelId());
         try {
             repository.saveAndFlush(existing);
             return mapper.toFullResponse(existing, vehicleModel);
@@ -95,7 +95,7 @@ public class VehicleUnitServiceImpl implements VehicleUnitService {
 
         repository.saveAndFlush(vehicleUnit);
 
-        VehicleModelResponse vehicleModel = vehicleModelClient.getVehicleModelById(vehicleUnit.getVehicleModelId().toString());
+        final VehicleModelResponse vehicleModel = vehicleModelClient.getVehicleModelById(vehicleUnit.getVehicleModelId());
 
         return mapper.toFullResponse(vehicleUnit, vehicleModel);
     }
