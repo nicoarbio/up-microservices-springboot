@@ -26,7 +26,7 @@ public class CarDealershipControllerAdvice {
     public static final String MESSAGE = "message";
     public static final String MESSAGES = "messages";
 
-    private static Map<String, Object> createErrorResponse(HttpStatus status, String error, String message) {
+    public static Map<String, Object> createErrorResponse(HttpStatus status, String error, String message) {
         return Map.of(
                 TIMESTAMP, LocalDateTime.now(),
                 STATUS, status.value(),
@@ -35,7 +35,7 @@ public class CarDealershipControllerAdvice {
         );
     }
 
-    private static Map<String, Object> createErrorResponse(HttpStatus status, String error, List<Map<String, String>> messages) {
+    public static Map<String, Object> createErrorResponse(HttpStatus status, String error, List<Map<String, String>> messages) {
         return Map.of(
                 TIMESTAMP, LocalDateTime.now(),
                 STATUS, status.value(),

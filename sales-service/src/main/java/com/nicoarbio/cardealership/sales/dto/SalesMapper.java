@@ -1,6 +1,5 @@
-package com.nicoarbio.cardealership.sales.dto.mapper;
+package com.nicoarbio.cardealership.sales.dto;
 
-import com.nicoarbio.cardealership.sales.dto.SalesResponse;
 import com.nicoarbio.cardealership.sales.entity.Sale;
 import org.springframework.stereotype.Component;
 

@@ -62,6 +62,11 @@
 			<artifactId>feign-okhttp</artifactId>
 			<version>${openfeign.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.nicoarbio.cardealership</groupId>
+			<artifactId>commons</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
