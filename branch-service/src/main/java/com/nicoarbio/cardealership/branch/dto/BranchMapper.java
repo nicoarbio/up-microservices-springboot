@@ -1,7 +1,5 @@
-package com.nicoarbio.cardealership.branch.dto.mapper;
+package com.nicoarbio.cardealership.branch.dto;
 
-import com.nicoarbio.cardealership.branch.dto.BranchRequest;
-import com.nicoarbio.cardealership.branch.dto.BranchResponse;
 import com.nicoarbio.cardealership.branch.entity.Branch;
 import org.springframework.stereotype.Component;
 
