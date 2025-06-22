@@ -1,4 +1,4 @@
-package com.nicoarbio.cardealership.vehicleunit.integration.connector;
+package com.nicoarbio.cardealership.vehicleunit.integration.vehiclemodel;
 
 import com.nicoarbio.cardealership.vehiclemodel.dto.VehicleModelResponse;
 import feign.FeignException;

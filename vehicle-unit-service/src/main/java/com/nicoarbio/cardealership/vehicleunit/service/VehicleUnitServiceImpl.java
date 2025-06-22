@@ -10,7 +10,7 @@ import com.nicoarbio.cardealership.vehicleunit.dto.mapper.VehicleUnitMapper;
 import com.nicoarbio.cardealership.vehicleunit.dto.LocationType;
 import com.nicoarbio.cardealership.vehicleunit.entity.VehicleUnit;
 import com.nicoarbio.cardealership.vehicleunit.dto.VehicleUnitStatus;
-import com.nicoarbio.cardealership.vehicleunit.integration.connector.VehicleModelClient;
+import com.nicoarbio.cardealership.vehicleunit.integration.vehiclemodel.VehicleModelClient;
 import com.nicoarbio.cardealership.vehicleunit.repository.VehicleUnitRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.dao.DataIntegrityViolationException;
