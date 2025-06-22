@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="mvn clean all" type="CompoundRunConfigurationType">
+    <toRun name="branch-service [clean]" type="MavenRunConfiguration" />
+    <toRun name="customer-service [clean]" type="MavenRunConfiguration" />
+    <toRun name="eureka-server [clean]" type="MavenRunConfiguration" />
+    <toRun name="maintenance-service [clean]" type="MavenRunConfiguration" />
+    <toRun name="sales-service [clean]" type="MavenRunConfiguration" />
+    <toRun name="vehicle-model-service [clean]" type="MavenRunConfiguration" />
+    <toRun name="vehicle-unit-service [clean]" type="MavenRunConfiguration" />
+    <method v="2" />
+  </configuration>
+</component>
