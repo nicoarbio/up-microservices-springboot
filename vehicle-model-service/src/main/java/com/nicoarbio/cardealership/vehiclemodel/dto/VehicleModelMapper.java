@@ -1,7 +1,5 @@
-package com.nicoarbio.cardealership.vehiclemodel.dto.mapper;
+package com.nicoarbio.cardealership.vehiclemodel.dto;
 
-import com.nicoarbio.cardealership.vehiclemodel.dto.VehicleModelRequest;
-import com.nicoarbio.cardealership.vehiclemodel.dto.VehicleModelResponse;
 import com.nicoarbio.cardealership.vehiclemodel.entity.VehicleModel;
 import org.springframework.stereotype.Component;
 
