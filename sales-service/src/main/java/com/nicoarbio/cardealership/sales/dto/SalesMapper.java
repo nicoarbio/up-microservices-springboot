@@ -15,6 +15,7 @@ public class SalesMapper {
                 sale.getAmount(),
                 sale.getSaleDate(),
                 sale.getDeliveryDate(),
+                sale.getEmployeeId(),
                 sale.getCustomerId(),
                 sale.getVehicleUnitId(),
                 sale.getBranchId(),

@@ -1,4 +1,4 @@
-package com.nicoarbio.cardealership.sales.integration.vehicleUnit.connector;
+package com.nicoarbio.cardealership.sales.integration.vehicleUnit;
 
 import com.nicoarbio.cardealership.vehicleunit.dto.VehicleUnitFullResponse;
 import com.nicoarbio.cardealership.vehicleunit.dto.VehicleUnitSoldRequest;

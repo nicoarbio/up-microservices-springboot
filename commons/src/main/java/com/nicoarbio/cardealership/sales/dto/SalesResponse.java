@@ -10,6 +10,7 @@ public record SalesResponse(
         BigDecimal amount,
         LocalDate saleDate,
         LocalDate deliveryDate,
+        UUID employeeId,
         UUID customerId,
         UUID vehicleUnitId,
         UUID branchId,

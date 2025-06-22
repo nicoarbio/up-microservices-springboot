@@ -26,6 +26,8 @@ public class Sale implements Serializable {
     @Column(nullable = false)
     private LocalDate deliveryDate;
     @Column(nullable = false)
+    private UUID employeeId;
+    @Column(nullable = false)
     private UUID customerId;
     @Column(nullable = false, unique = true)
     private UUID vehicleUnitId;
@@ -53,6 +55,9 @@ public class Sale implements Serializable {
     public LocalDate getDeliveryDate() { return deliveryDate; }
     public void setDeliveryDate(LocalDate deliveryDate) { this.deliveryDate = deliveryDate; }
 
+    public UUID getEmployeeId() { return employeeId; }
+    public void setEmployeeId(UUID employeeId) { this.employeeId = employeeId; }
+
     public UUID getCustomerId() { return customerId; }
     public void setCustomerId(UUID customerId) { this.customerId = customerId; }
 
@@ -75,6 +80,7 @@ public class Sale implements Serializable {
                 ", amount=" + amount +
                 ", saleDate=" + saleDate +
                 ", deliveryDate=" + deliveryDate +
+                ", employeeId=" + employeeId +
                 ", customerId=" + customerId +
                 ", vehicleUnitId=" + vehicleUnitId +
                 ", branchId=" + branchId +

@@ -1,4 +1,4 @@
-package com.nicoarbio.cardealership.sales.integration.vehicleModel.connector;
+package com.nicoarbio.cardealership.sales.integration.vehicleModel;
 
 import com.nicoarbio.cardealership.vehiclemodel.dto.VehicleModelResponse;
 import org.springframework.cloud.openfeign.FeignClient;
