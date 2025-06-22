@@ -9,6 +9,7 @@ This document defines the core entities and their relationships for the car deal
 - Customer: Represents a person who purchases vehicles or requests services.
 - Sale: Represents a vehicle sale operation, awarding a stock item to a customer. The vehicle should be marked as sold.
 - MaintenanceService: Represents a mechanical service request for a vehicle with or without available warranty.
+- Employee: Represents a person who works at the dealership, responsible for sales and services.
 
 ### Notes
 - A `Sale` links a `Customer`, `VehicleUnit`, and `Branch`.
@@ -90,3 +91,19 @@ This document defines the core entities and their relationships for the car deal
 - `serviceType`: String (e.g. oil change, general inspection)
 - `vehicleUnit`: VehicleUnit (FK)
 - `customer`: Customer (FK)
+
+---
+
+### 👨‍💼 Employee
+**Attributes:**
+- `id`: UUID
+- `firstName`: String
+- `lastName`: String
+- `dni`: String - UNIQUE
+- `email`: String
+- `phone`: String
+- `branch`: Branch (FK)
+- `role`: String (e.g. sales, service, manager)
+- `hireDate`: LocalDate
+- `salary`: BigDecimal
+- `isActive`: Boolean

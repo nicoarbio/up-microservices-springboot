@@ -102,6 +102,7 @@ All services will:
 - **Port**: `8085`
 - **Database**: H2
 - **Dependencies**:
+  - Calls `employee-service` to validate employee
   - Calls `customer-service` to validate customer
   - Calls `vehicle-unit-service` to mark vehicle as SOLD
   - Calls `branch-service` to validate branch
@@ -121,6 +122,7 @@ All services will:
 - **Port**: `8086`
 - **Database**: H2
 - **Dependencies**:
+  - Calls `employee-service` to validate employee
   - Calls `vehicle-unit-service` to get `VehicleUnit`
   - Calls `customer-service` to get `Customer`
   - Calls `sales-service` to determine warranty eligibility
@@ -130,3 +132,17 @@ All services will:
   - H2 Database
   - Eureka Discovery Client
   - OpenFeign
+
+---
+
+### 🏢 `employee-service`
+- **Maven Artifact**: `employee-service`
+- **Responsibility**: Manage branches employees.
+- **Entities**: `Employee`
+- **Port**: `8087`
+- **Database**: H2
+- **Maven Dependencies**:
+  - Spring Validation
+  - Spring Data JPA
+  - H2 Database
+  - Eureka Discovery Client

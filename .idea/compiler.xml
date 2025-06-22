@@ -14,6 +14,7 @@
         <module name="eureka-server" />
         <module name="commons" />
         <module name="vehicle-unit-service" />
+        <module name="employee-service" />
       </profile>
     </annotationProcessing>
   </component>
@@ -22,6 +23,7 @@
       <module name="branch-service" options="-parameters" />
       <module name="commons" options="-parameters" />
       <module name="customer-service" options="-parameters" />
+      <module name="employee-service" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="maintenance-service" options="-parameters" />
       <module name="sales-service" options="-parameters" />

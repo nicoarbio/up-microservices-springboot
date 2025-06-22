@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run services" type="CompoundRunConfigurationType">
+    <toRun name="BranchServiceApplication" type="SpringBootApplicationConfigurationType" />
+    <toRun name="CustomerServiceApplication" type="SpringBootApplicationConfigurationType" />
+    <toRun name="EmployeeServiceApplication" type="SpringBootApplicationConfigurationType" />
+    <toRun name="MaintenanceServiceApplication" type="SpringBootApplicationConfigurationType" />
+    <toRun name="SalesServiceApplication" type="SpringBootApplicationConfigurationType" />
+    <toRun name="VehicleModelServiceApplication" type="SpringBootApplicationConfigurationType" />
+    <toRun name="VehicleUnitsServiceApplication" type="SpringBootApplicationConfigurationType" />
+    <method v="2" />
+  </configuration>
+</component>
