@@ -132,7 +132,7 @@ public class CarDealershipControllerAdvice {
      * Handles generic exceptions that are not caught by other handlers.
      */
     @ExceptionHandler(Exception.class)
-    public ResponseEntity<Map<String, Object>> handleGeneric(RuntimeException ex) {
+    public ResponseEntity<Map<String, Object>> handleGeneric(Exception ex) {
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(createErrorResponse(
                 HttpStatus.INTERNAL_SERVER_ERROR,
                 "Internal Server Error",
